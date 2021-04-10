@@ -2,13 +2,41 @@
 {% load static %}
 {% block content %}
 <div class = 'container-fluid'>
-    <div class = 'col-sm-8'>
-       <video loop autoplay><source src = "{% static 'table_creator/video' %}" type="video/mp4"></video>
-       
+    <div class = 'col-sm-12 text-center' style = "background-color: black;color:white">
+        <h1><strong>SMART MEDICAL CASE</strong></h1>
+        <h3 >NEVER MISS A PILL AGAIN</h3>
+    </div>
+</div>
+<br><br><br>
+<div class = 'container fluid text-center'>
+    <div class = 'col-sm-4'>
+        <div class="card" style = "border-style: double;">
+            <div class="card-body">
+                <h5 class="card-title" style = 'background-color: black;color: white;'>About Us</h5>
+                <p class="card-text">Explore the team behind Smart Medical Case and find how to contact us !</p>
+                <a href="/about" class="card-link">Explore</a>
+            </div>
+        </div>
     </div>
     <div class = 'col-sm-4'>
-        <h1 class = 'text-center'><strong><br><br> NEVER <br><br> MISS <br><br> A <br><br> PILL <br><br> AGAIN</strong></h1>
+        <div class="card" style = "border-style: double;">
+            <div class="card-body">
+                <h5 class="card-title" style = 'background-color: black;color:white'>Learn</h5>
+                <p class="card-text">Learn more about the design and the formation of the Smart Medical Case</p>
+                <a href="/learn" class="card-link">Explore</a>
+            </div>
+        </div>
     </div>
+    <div class = 'col-sm-4'>
+        <div class="card" style = "border-style: double;">
+            <div class="card-body">
+                <h5 class="card-title" style = "background-color: black;color: white;">Set Up</h5>
+                <p class="card-text">Have your own device ? Set it up with our automatic configurator and read the instructions</p>
+                <a href="/configure" class="card-link">Explore</a>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 {% endblock %}
 
