@@ -1,0 +1,15 @@
+{% extends 'table_creator/base.html' %}
+{% load static %}
+{% block content %}
+<div class = 'container-fluid'>
+    <div class = 'col-sm-8'>
+       <video loop autoplay><source src = "{% static 'table_creator/video' %}" type="video/mp4"></video>
+       
+    </div>
+    <div class = 'col-sm-4'>
+        <h1 class = 'text-center'><strong><br><br> NEVER <br><br> MISS <br><br> A <br><br> PILL <br><br> AGAIN</strong></h1>
+    </div>
+</div>
+{% endblock %}
+
+GET /static/table_creator/demo.mp4
