@@ -1,0 +1,49 @@
+{% extends 'table_creator/base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+{% block content %}
+<div class = 'container-fluid text-center'>
+    <h1><strong>Meet the Team !</strong></h1>
+</div>
+<br><br>
+<div class = 'container-fluid text-center'>
+    <div class = 'row'>
+        <div class = 'col'>
+            <div class="card" style="width: 18rem;">
+                <img class = 'img-fluid' src="{%static 'table_creator/image/atharva.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Atharva Naik</h5>
+                <p class="card-text">Atharva is an electrical engineer with a passion for design.<br>He describes his strength as being a <strong>co-ordinator</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class = 'col'>
+            <div class="card" style="width: 18rem;">
+                <img class="img-fluid" src="" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Mahdi Varposhti</h5>
+                <p class="card-text">Mahdi is an electrical engineer with a passion for coding.<br>He describes his strength as being <strong>detail-oriented</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class = 'col'>
+            <div class="card" style="width: 18rem;">
+                <img class="img-fluid" height="400" width="400" src="{%static 'table_creator/image/rishabh.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Rishabh Ruhela</h5>
+                <p class="card-text">Mahdi is an electrical engineer with a passion for circuit design.<br>He describes his strength as being <strong>Team-Player</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class = 'col'>
+            <div class="card" style="width: 18rem;">
+                <img class="img-fluid" src="{%static 'table_creator/image/claes.png' %}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Claes Jared Medrano</h5>
+                <p class="card-text">Claes is an electrical engineer with a passion for coding.<br>He describes his strength as being <strong>efficient and organized</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
