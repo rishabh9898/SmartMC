@@ -1,16 +1,24 @@
 {% extends 'table_creator/base.html' %}
 {% load static %}
+{% load embed_video_tags %}
 {% block content %}
 <div class = 'container-fluid'>
-    <div class = 'col-sm-12 text-center' style = "background-color: black;color:white">
+    <div class = 'col-sm-12 text-center'>
         <h1><strong>SMART MEDICAL CASE</strong></h1>
-        <h3 >NEVER MISS A PILL AGAIN</h3>
     </div>
 </div>
 <div class = 'container-fluid text-center'>
-    <img class = 'img-fluid' src = "{% static 'table_creator/image/smc.png' %}">
+    <div class = 'row'>
+        {% for vid in obj %}
+        <div class = 'col'>
+            {% video vid.video 'small' %}
+        </div>
+        {% endfor %}
+    </div>
+    <br><br><br>
+    <h3><strong>NEVER MISS A PILL AGAIN</strong></h3>
 </div>
-<br><br><br>
+<br>
 <div class = 'container fluid text-center'>
     <div class = 'row'>
         <div class = 'col-sm'>
@@ -18,7 +26,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style = 'background-color: black;color: white;'>About Us</h5>
                     <p class="card-text">Explore the team behind Smart Medical Case and find how to contact us !</p>
-                    <a href="/about" class="card-link">Explore</a>
+                    <a class = 'btn btn-primary' role = 'button' href="/about">Explore</a>
                 </div>
             </div>
         </div>
@@ -26,8 +34,8 @@
             <div class="card" style = "border-style: double;">
                 <div class="card-body">
                     <h5 class="card-title" style = 'background-color: black;color:white'>Learn</h5>
-                    <p class="card-text">Learn more about the design and the formation of the Smart Medical Case</p>
-                    <a href="/learn" class="card-link">Explore</a>
+                    <p class="card-text">Learn more about the design and the formation of the Smart Medical Case.</p>
+                    <a class = 'btn btn-primary' role = 'button' href="/learn">Explore</a>
                 </div>
             </div>
         </div>
@@ -35,14 +43,15 @@
             <div class="card" style = "border-style: double;">
                 <div class="card-body">
                     <h5 class="card-title" style = "background-color: black;color: white;">Set Up</h5>
-                    <p class="card-text">Have your own device ? Set it up with our automatic configurator and read the instructions</p>
-                    <a href="/configure" class="card-link">Explore</a>
+                    <p class="card-text">Set up your own device with our automatic configurator and read the instructions.</p>
+                    <a class = 'btn btn-primary' role = 'button' href="/configure">Explore</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </div>
+<br>
 {% endblock %}
 
 GET /static/table_creator/demo.mp4
