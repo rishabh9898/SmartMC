@@ -7,7 +7,7 @@ class CreateForm(forms.ModelForm):
    export_to_CSV = forms.BooleanField(required=False)
    class Meta:
      model = SmartMC
-     fields = ['name', 'email', 'date','quantity','place_in']
+     fields = ['name','pill_Box1','total_quantity','quantity','day_name']
 # class Reg(forms.Form):
 # 	name=forms.CharField(error_messages={'required':'Enter your name'})
 # 	email=forms.CharField(error_messages={'required':'Enter your email'})

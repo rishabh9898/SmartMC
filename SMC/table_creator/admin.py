@@ -10,7 +10,7 @@ from .models import Item
 
 
 class CreateAdmin(admin.ModelAdmin):
-   list_display = ['name', 'email', 'quantity','date','place_in']
+   list_display = ['name', 'email', 'quantity','date']
    form = CreateForm
    list_filter = ['name']
    search_fields = ['name', 'email']
@@ -25,7 +25,7 @@ class usrdet(ImportExportModelAdmin):
 	pass
 
 
-admin.site.register(Category)
+# admin.site.register(Category)
 class MyModelAdmin(AdminVideoMixin, admin.ModelAdmin):
     pass
 

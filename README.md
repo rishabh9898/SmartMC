@@ -6,4 +6,3 @@ Libraries added:
 
 pip install django_import_export
 
-pip install django-crispy-forms

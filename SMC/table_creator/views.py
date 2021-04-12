@@ -20,8 +20,9 @@ from .models import Item
 # 	return render(request, 'table_creator/setup.html',{'form':fm})
 
 def home(request):
-	obj = Item.objects.all()
-	return render(request, 'table_creator/landing.html',{'obj':obj})
+     # return render(request, 'table_creator/landing.html')
+     obj = Item.objects.all()
+     return render(request, 'table_creator/landing.html',{'obj':obj})
 
 # def setup(request):
 # 	form = 'List of entry'
