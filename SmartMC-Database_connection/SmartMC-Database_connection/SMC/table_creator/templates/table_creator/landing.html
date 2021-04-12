@@ -1,0 +1,72 @@
+{% extends 'table_creator/base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+{% block content %}
+<div class = 'container-fluid'>
+    <div class = 'col-sm-12 text-center'>
+        <h1><strong>SMART MEDICAL CASE</strong></h1><br>
+    </div>
+</div>
+<div class = 'container-fluid text-center'>
+    <div class = 'row'>
+        {% for vid in obj %}
+        <div class = 'col'>
+            {% video vid.video 'small' %}
+        </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <h3><strong>NEVER MISS A PILL AGAIN</strong></h3>
+</div>
+<br>
+<div class = 'container-fluid text-center d-flex justify-content-center'>
+    <div class = 'row'>
+        <div class = 'col'>
+            <div class="card" style="width: 69.5rem;">
+                <div class="card-body">
+                  <h5 class="card-title" style="background-color: black;color: white;"><strong>INSTRUCTIONS FOR USE</strong></h5>
+                  <p class="card-text"><ul>
+                      <li>Use the <a href = '/configure'>configurator</a> located on the website to get the right csv for you </li>
+                      <li>Download the csv generated and save it in the sd card provided under the name of 'data.csv'</li>
+                      <li>Insert the sd card in your device and switch it on. The device should work as intended.</li>
+                  </ul></p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class = 'container fluid text-center'>
+    <div class = 'row'>
+        <div class = 'col-sm'>
+            <div class="card" style = "border-style: double;">
+                <div class="card-body">
+                    <h5 class="card-title" style = 'background-color: black;color: white;'>About Us</h5>
+                    <p class="card-text">Explore the team behind Smart Medical Case and find how to contact us !</p>
+                    <a class = 'btn btn-primary' role = 'button' href="/about">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class = 'col-sm'>
+            <div class="card" style = "border-style: double;">
+                <div class="card-body">
+                    <h5 class="card-title" style = 'background-color: black;color:white'>Shop</h5>
+                    <p class="card-text">Learn more about the design and buy the Smart Medical Case.</p>
+                    <a class = 'btn btn-primary' role = 'button' href="/learn">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class = 'col-sm'>
+            <div class="card" style = "border-style: double;">
+                <div class="card-body">
+                    <h5 class="card-title" style = "background-color: black;color: white;">Set Up</h5>
+                    <p class="card-text">Set up your own device with our automatic configurator and read the instructions.</p>
+                    <a class = 'btn btn-primary' role = 'button' href="/configure">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+{% endblock %}
