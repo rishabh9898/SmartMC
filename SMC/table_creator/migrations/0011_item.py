@@ -6,9 +6,9 @@ import embed_video.fields
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('table_creator', '0010_smartmc_date_now'),
-    ]
+    #dependencies = [
+    #    ('table_creator', '0010_smartmc_date_now'),
+    #]
 
     operations = [
         migrations.CreateModel(
