@@ -6,3 +6,4 @@ Libraries added:
 
 pip install django_import_export
 
+athynaik.pythonanywhere.com
