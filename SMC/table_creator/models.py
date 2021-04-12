@@ -39,9 +39,10 @@ class SmartMC(models.Model):
 	# pill_Box2 = models.CharField(max_length=50, blank=True, null=True,choices=category_choice)
 	# pill_Box3 = models.CharField(max_length=50, blank=True, null=True,choices=category_choice)
 	# pill_Box4 = models.CharField(max_length=50, blank=True, null=True,choices=category_choice)
-	date_now=models.DateTimeField(auto_now=True)
 	day_name = models.CharField("Please Enter the name of the day",max_length=50, blank=True, null=True)
+	day_time = models.CharField("Please Enter the time of the day",max_length=50, blank=True, null=True)
 	email=models.EmailField(max_length=200)
+	date_now=models.DateTimeField(auto_now=True)
 	
 	# export_to_CSV = models.BooleanField(default=False)
 
