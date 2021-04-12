@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-te7)(tqkp&mpp-p3&psiotrahr)z%nyn5#i(lt=x54+zz(nlr-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['smartmc.herokuapp.com']
 
 
 # Application definition
