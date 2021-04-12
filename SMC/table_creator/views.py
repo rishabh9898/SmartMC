@@ -7,6 +7,3 @@ def home(request):
 
 def about(request):
     return render(request, 'table_creator/about_us.html')
-
-def learn(request):
-    return render(request, 'table_creator/shop_learn.html')
