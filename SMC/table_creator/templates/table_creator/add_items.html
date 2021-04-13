@@ -1,10 +1,12 @@
 {% extends 'table_creator/base.html' %}
 {% load static %}
 {% block content %}
+{% load crispy_forms_tags %}
 	<div class = 'container-fluid'>
     <div class = 'col-sm-12 text-center'>
         <h1><strong>SMART MEDICAL CASE</strong></h1><br>
     </div>
+}
 </div>
 <div class = 'container-fluid text-center'>
     
@@ -37,7 +39,7 @@
 <p class="card-text"><ul>
                       <li>
                       	<form method='POST' action=''>{% csrf_token %}
-								{{form.as_p}}
+								{{form|crispy}}
         						<input type="submit" value='Save'/>
     							</form> </li>
                       <li>Download the csv generated and save it in the sd card provided under the name of 'data.csv'</li>
